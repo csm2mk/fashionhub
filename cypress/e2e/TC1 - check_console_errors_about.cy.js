@@ -1,5 +1,5 @@
-describe('Check for console errors on the website', () => {
-    it('should not have any console errors', () => {
+describe('TC1 - Check for console errors on the website - the About page ', () => {
+    it('should not have any console errors - About page', () => {
         // Intercept browser's console.log, console.error, console.warn
         cy.on('window:before:load', (win) => {
             cy.stub(win.console, 'error').as('consoleError')

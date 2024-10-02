@@ -1,4 +1,4 @@
-describe('Customer Login Test', () => {
+describe('TC3 - Customer Login Test', () => {
   it('should log in with valid credentials', () => {
     // Visit the login page
     cy.visit('https://pocketaces2.github.io/fashionhub/login.html');

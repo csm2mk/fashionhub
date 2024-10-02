@@ -1,4 +1,4 @@
-describe('Check for console errors on the website', () => {
+describe('TC1 - Check for console errors on the website', () => {
     it('should not have any console errors', () => {
         // Intercept browser's console.log, console.error, console.warn
         cy.on('window:before:load', (win) => {

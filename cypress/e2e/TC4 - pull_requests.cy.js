@@ -1,4 +1,4 @@
-describe('Fetch Open PRs and Output as CSV', () => {
+describe('TC4 - Fetch Open PRs and Output as CSV', () => {
   it('should fetch open PRs and log them in CSV format', () => {
     // Use GitHub API to get open pull requests
     cy.request({
@@ -31,7 +31,7 @@ describe('Fetch Open PRs and Output as CSV', () => {
         // Log the CSV output
         const csvOutput = csvRows.join('\n');
         cy.log(csvOutput);
-        cy.writeFile('cypress/fixtures/pr_list.csv', csvOutput);
+        cy.writeFile('cypress/fixtures/open_PR_list.csv', csvOutput);
       } else {
         cy.log('No open pull requests found');
       }

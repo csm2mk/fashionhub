@@ -1,4 +1,4 @@
-describe('Check all links on the page for valid status codes', () => {
+describe('TC2 - Check all links on the page for valid status codes', () => {
   it('should fetch all links and verify their status codes', () => {
     // Visit the main page
     cy.visit('https://pocketaces2.github.io/fashionhub/');
