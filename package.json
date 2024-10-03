@@ -5,11 +5,5 @@
   "dependencies": {
     "cypress-xpath": "^2.0.1"
   }
-  
-  "scripts": {
-  "test:chrome": "cypress run --browser chrome",
-  "test:firefox": "cypress run --browser firefox",
-  "test:edge": "cypress run --browser edge",
-  "test:all": "npm run test:chrome && npm run test:firefox && npm run test:edge"
-}
+ 
 }
